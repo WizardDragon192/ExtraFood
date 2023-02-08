@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"xox",
+		"xox",
+		"xxx"
+	],
+	"key": {
+		"x": {"item": "minecraft:glass"}
+	},
+	"result": {"item": "extrafood:glass_cup"}
+}
