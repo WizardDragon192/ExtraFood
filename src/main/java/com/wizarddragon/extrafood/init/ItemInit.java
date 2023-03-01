@@ -1,10 +1,8 @@
 package com.wizarddragon.extrafood.init;
 
 import com.wizarddragon.extrafood.ExtraFood;
-import net.minecraft.item.Foods;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.data.RegistryDumpReport;
+import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -28,10 +26,10 @@ public class ItemInit {
 
 		@Override
 		public ItemStack makeIcon() {
-			return new ItemStack(TOAST.get());
+			return new ItemStack(ICED_TEA.get());
 		}
 
-		//Create tab
+		//Create creative tab
 		public static final CreativeTab instance = new CreativeTab(ItemGroup.TABS.length, "Extra Food");
 	}
 
@@ -40,20 +38,18 @@ public class ItemInit {
 	public static final RegistryObject<Item> KNIFE = ITEMS.register("knife", () ->
 		new Item(new Item.Properties().tab(CreativeTab.instance))
 	);
-	
-	// Register mortar and pestle item
-	public static final RegistryObject<Item> MORTAR_PESTLE = ITEMS.register("mortar_pestle", () ->
-		new Item(new Item.Properties().tab(CreativeTab.instance))
-	);
-	
-	
+
 	// Misc
 	// Register glass cup item
 	public static final RegistryObject<Item> GLASS_CUP = ITEMS.register("glass_cup", () ->
 		new Item(new Item.Properties().tab(CreativeTab.instance))
 	);
-	
-	
+
+	// Register ice cubes item
+	public static final RegistryObject<Item> ICE_CUBES = ITEMS.register("ice_cubes", () ->
+			new Item(new Item.Properties().tab(CreativeTab.instance))
+	);
+
 	// Food
 	// Register bread slice item
 	public static final RegistryObject<Item> BREAD_SLICE = ITEMS.register("bread_slice", () ->
@@ -64,12 +60,6 @@ public class ItemInit {
 	public static final RegistryObject<Item> TOAST = ITEMS.register("toast", () ->
 		new Item(new Item.Properties().tab(CreativeTab.instance).food(Foods.COOKED_COD))
 	);
-	
-	// Register ice cubes item
-	public static final RegistryObject<Item> ICE_CUBES = ITEMS.register("ice_cubes", () ->
-		new Item(new Item.Properties().tab(CreativeTab.instance))
-	);
-
 	
 	// Drinks
 	public static final RegistryObject<Item> ICED_TEA = ITEMS.register("iced_tea", () ->
