@@ -1,7 +1,0 @@
-{
-	"type": "minecraft:smelting",
-	"ingredient": {"item": "extrafood:bread_slice"},
-	"result": "extrafood:toast",
-	"experience": 0.35,
-	"cookingtime": 200
-}

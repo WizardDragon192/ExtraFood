@@ -8,5 +8,5 @@
 	"key": {
 		"x": {"item": "minecraft:glass"}
 	},
-	"result": {"item": "extrafood:glass_cup"}
+	"result": {"item": "moretea:glass_cup"}
 }

@@ -1,8 +1,0 @@
-{
-	"type": "minecraft:crafting_shapeless",
-	"ingredients": [
-		{"item": "minecraft:bread"},
-		{"item": "extrafood:knife"}
-	],
-	"result": {"item": "extrafood:bread_slice", "count": 8}
-}

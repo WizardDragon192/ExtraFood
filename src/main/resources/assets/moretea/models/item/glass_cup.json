@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "extrafood:items/ice_cubes"
+    "layer0": "moretea:items/glass_cup"
   }
 }

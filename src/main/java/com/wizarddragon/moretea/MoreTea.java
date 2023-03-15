@@ -1,6 +1,6 @@
-package com.wizarddragon.extrafood;
+package com.wizarddragon.moretea;
 
-import com.wizarddragon.extrafood.init.ItemInit;
+import com.wizarddragon.moretea.init.ItemInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -20,14 +20,14 @@ import org.apache.logging.log4j.Logger;
 import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(ExtraFood.MOD_ID)
-public class ExtraFood
+@Mod(MoreTea.MOD_ID)
+public class MoreTea
 {
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
-    public static final String MOD_ID = "extrafood";
+    public static final String MOD_ID = "moretea";
 
-    public ExtraFood() {
+    public MoreTea() {
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
