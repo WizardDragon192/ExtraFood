@@ -35,7 +35,7 @@ public class ItemInit {
 
 	// Tools
 	// Register ice cube tray
-	public static final RegistryObject<Item> ICE_CUBE_TRAY = ITEMS.register("ice_cube_tray", () ->
+	public static final RegistryObject<Item> EMPTY_TRAY = ITEMS.register("empty_tray", () ->
 			new Item(new Item.Properties().tab(CreativeTab.instance))
 	);
 
@@ -47,6 +47,11 @@ public class ItemInit {
 
 	// Register ice cubes item
 	public static final RegistryObject<Item> ICE_CUBES = ITEMS.register("ice_cubes", () ->
+			new Item(new Item.Properties().tab(CreativeTab.instance))
+	);
+
+	// Register filled ice cube tray
+	public static final RegistryObject<Item> FILLED_TRAY = ITEMS.register("filled_tray", () ->
 			new Item(new Item.Properties().tab(CreativeTab.instance))
 	);
 

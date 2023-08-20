@@ -3,5 +3,7 @@
 
 	"item.moretea.glass_cup": "Glass Cup",
 	"item.moretea.ice_cubes": "Ice Cubes",
-	"item.moretea.iced_tea": "Iced Tea"
+	"item.moretea.iced_tea": "Iced Tea",
+	"item.moretea.empty_tray": "Empty Ice Tray",
+	"item.moretea.filled_tray": "Filled Ice Tray"
 }
