@@ -2,11 +2,16 @@ package com.wizarddragon.moretea.init;
 
 import com.wizarddragon.moretea.MoreTea;
 import com.wizarddragon.moretea.items.*;
-import net.minecraft.item.*;
-import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
+
+import net.minecraft.world.food.Foods;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+
 
 public class ItemInit {
 	
@@ -19,7 +24,7 @@ public class ItemInit {
 	}
 
 	//Show custom tab in Creative menu
-	public static class CreativeTab extends ItemGroup {
+	public static class CreativeTab extends CreativeModeTab {
 		private CreativeTab(int index, String label) {
 			super(index, label);
 		}
@@ -30,7 +35,7 @@ public class ItemInit {
 		}
 
 		//Create creative tab
-		public static final CreativeTab instance = new CreativeTab(ItemGroup.TABS.length, "More Tea");
+		public static final CreativeTab instance = new CreativeTab(CreativeModeTab.TABS.length, "More Tea");
 	}
 
 	// Tools
